@@ -5,7 +5,7 @@ function showMoney() {
 }
 
 function balance() {
-    return "Account balance: \n";
+    return "Account balance:\n";
 }
 
 
