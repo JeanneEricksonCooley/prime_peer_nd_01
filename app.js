@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
 
-var randomNum = require('./randomNum');
+var convert = require('./convertUSD');
 
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-   response.sendStatus(randomNum());
+   response.sendStatus(convert());
 });
 
 app.listen(app.get('port'), function() {

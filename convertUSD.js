@@ -1,3 +1,11 @@
+var randomNum = require('./randomNum');
+
+function makeMoney() {
+    var money = toUSD(randomNum());
+    console.log(money);
+    return money;
+}
+
 function toUSD(number) {
     var number = number.toString(),
         dollars = number.split('.')[0],
@@ -7,3 +15,5 @@ function toUSD(number) {
         .split('').reverse().join('');
     return '$' + dollars + '.' + cents.slice(0, 2);
 }
+
+module.exports = makeMoney;

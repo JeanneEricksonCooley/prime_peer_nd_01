@@ -1,7 +1,8 @@
 function ourNum() {
     var randomNum = randomNumber(100, 1000);
-    return randomNum;
     console.log("Random number: ", randomNum);
+    return randomNum;
+
 }
 
 function randomNumber(min, max) {
