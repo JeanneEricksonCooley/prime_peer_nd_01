@@ -1,10 +1,12 @@
 var express = require('express');
 var app = express();
 
+var randomNum = require('./randomNum');
+
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(request, response) {
-   response.send("Root the route!")
+   response.sendStatus(randomNum());
 });
 
 app.listen(app.get('port'), function() {
