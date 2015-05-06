@@ -1,7 +1,5 @@
-var randomNum = require('./randomNum');
-
-function makeMoney() {
-    var money = toUSD(randomNum());
+function makeMoney(thisNumFunc) {
+    var money = toUSD(thisNumFunc);
     console.log(money);
     return money;
 }
