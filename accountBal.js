@@ -1,7 +1,8 @@
 var convert = require('./convertUSD');
+var randomNum = require('./randomNum');
 
 function showMoney() {
-    return convert();
+    return convert(randomNum());
 }
 
 function balance() {
